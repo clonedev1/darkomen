@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<!--НАЧАЛЬНЫЕ НАСТРОЙКИ ИГРОКА-->
+	<player>
+		<name>Vasya</name>
+		<money>66600</money>
+		<!--
+			числа означают уровни, 0 - отключен , 1 - уровень 1, 2 - уровень 2 ... итд
+			damage="0" означает что оружие отключено полностью
+		-->
+		<weapons>
+			<weapon damage="1" bullet="0" freeze="0" magnet="0" radius="1"/>
+			<weapon damage="0" bullet="0" freeze="0" magnet="0" radius="1"/>
+			<weapon damage="0" bullet="0" freeze="0" magnet="0" radius="1"/>
+		</weapons>
+	</player>
+	
+	<!--ТАБЛИЦА АПГРЕЙДОВ ОРУЖИЯ-->
+	<weapon_upgrades>
+		<!-- сколько дамага наносить ударом кулака-->
+		<damage>
+			<level value="1" cost="5000"/>
+			<level value="2" cost="2000"/>
+			<level value="3" cost="3000"/>
+		</damage>
+		<!-- радиус удара в пикселях-->
+		<radius>
+			<level value="50" cost="100"/>
+			<level value="100" cost="200"/>
+			<level value="150" cost="300"/>
+		</radius>
+		<!-- сколько пулек кулак выстреливает-->
+		<bullet>
+			<level value="1" cost="100"/>
+			<level value="2" cost="200"/>
+			<level value="4" cost="300"/>
+		</bullet>
+		<!-- время заморозки в секундах-->
+		<freeze>
+			<level value="1.0" cost="100"/>
+			<level value="2.0" cost="200"/>
+			<level value="3.0" cost="300"/>
+		</freeze>
+		<!-- время магнита в секундах -->
+		<magnet>
+			<level value="1.0" cost="100"/>
+			<level value="1.5" cost="200"/>
+			<level value="2.5" cost="300"/>
+		</magnet>
+		
+	</weapon_upgrades>
+	
+	<!--УРОВНИ-->
+	<levels>
+		<!--
+			Все типы монстров:
+			
+			"bullet_monster"
+			"explosion_monster"
+			"multi_explosion_monster"
+			"multi_explosion_monster_minion"
+			"lightning_monster"
+			"multi_bullet_monster"
+			"cannibal_master"
+			"cannibal"
+			"cannibal_minion"
+			"stone_summoner"
+			"sonic_wave_monster"
+		-->
+		
+		<!-- LEVEL 1 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="bullet_monster" 			count="20"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 2 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="20"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 3 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 4 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="5"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 5 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 6 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 7 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 8 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 9 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 10 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 11 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 12 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 13 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 14 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 15 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 16 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 17 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+		<!-- LEVEL 18 -->
+		<level goals="10,20,30">
+			<monsters>
+				<monster id="multi_bullet_monster" 		count="10"/>
+				<monster id="bullet_monster" 			count="10"/>
+				<monster id="explosion_monster" 		count="10"/>
+				<monster id="multi_explosion_monster" 	count="10"/>
+				<monster id="lightning_monster" 		count="10"/>
+				<monster id="cannibal_master" 			count="10"/>
+				<monster id="stone_summoner" 			count="10"/>
+				<monster id="sonic_wave_monster" 		count="10"/>
+			</monsters>
+		</level>
+		
+	</levels>
+	
+	
+</data>
